@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bankXSTL.xsl "?>
+
+<banks  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bankXSD.xsd">
+	<bank id="1">
+		<name>Kredobank</name>
+		<country>Ukraine</country>
+		<types>
+			<type>Accumulative</type>
+			<type>Savings</type>
+		</types>
+		<depositor>Oleh</depositor>
+		<accountId>127891</accountId>
+		<depositAmount>300</depositAmount>
+		<currency>USD</currency>
+		<profitability>15</profitability>
+		<numberMonths>6</numberMonths>
+	</bank>
+	
+	<bank id="2">
+		<name>Privatbank</name>
+		<country>Ukraine</country>
+		<types>
+			<type>Savings</type>
+			<type>Settlement</type>
+		</types>
+		<depositor>Volodymyr</depositor>
+		<accountId>14478</accountId>
+		<depositAmount>1500</depositAmount>
+		<currency>UAH</currency>
+		<profitability>20</profitability>
+		<numberMonths>24</numberMonths>
+	</bank>
+	
+	<bank id="3">
+		<name>Alfabank</name>
+		<country>UK</country>
+		<types>
+			<type>Accumulative</type>
+			<type>Settlement</type>
+		</types>
+		<depositor>Taras</depositor>
+		<accountId>11245121</accountId>
+		<depositAmount>300</depositAmount>
+		<currency>USD</currency>
+		<profitability>20</profitability>
+		<numberMonths>36</numberMonths>
+	</bank>
+	
+	<bank id="4">
+		<name>Oschadbank</name>
+		<country>Belarus</country>
+		<types>
+			<type>Savings</type>
+			<type>Settlement</type>
+		</types>
+		<depositor>Ihor</depositor>
+		<accountId>1122331</accountId>
+		<depositAmount>200</depositAmount>
+		<currency>EUR</currency>
+		<profitability>11</profitability>
+		<numberMonths>12</numberMonths>
+	</bank>
+	
+	<bank id="5">
+		<name>InternationalBank</name>
+		<country>USA</country>
+		<types>
+			<type>Urgent</type>
+			<type>Settlement</type>
+		</types>
+		<depositor>Bohdan</depositor>
+		<accountId>777712</accountId>
+		<depositAmount>400</depositAmount>
+		<currency>USD</currency>
+		<profitability>15</profitability>
+		<numberMonths>30</numberMonths>
+	</bank>
+</banks>

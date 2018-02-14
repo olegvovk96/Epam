@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+		 
+	<xs:element name = "banks">
+        	<xs:complexType>
+    			<xs:sequence>
+    				<xs:element  name = "bank" minOccurs = "0" maxOccurs = "unbounded">
+    					<xs:complexType>
+							<xs:sequence>
+								<xs:element name="name" type = "xs:string" />
+								<xs:element name="country" type = "xs:string" />
+								<xs:element name="types">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name = "type" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="depositor" type = "xs:string" />
+								<xs:element name="accountId" type = "xs:integer" />
+								<xs:element name="depositAmount">
+									<xs:simpleType>
+            							<xs:restriction base="xs:integer">
+                							<xs:minInclusive value="20"/>
+                    					</xs:restriction>
+               					 	</xs:simpleType>
+								</xs:element>
+								<xs:element name="currency" type = "xs:string" />
+								<xs:element name="profitability">
+									<xs:simpleType>
+            							<xs:restriction base="xs:integer">
+                							<xs:minInclusive value="2"/>
+                							<xs:maxInclusive value="20"/>
+                    					</xs:restriction>
+                					</xs:simpleType>
+            					</xs:element>
+								<xs:element name="numberMonths" type = "xs:integer" />
+							</xs:sequence>
+							<xs:attribute name = 'id' type = 'xs:integer'/>
+						</xs:complexType>
+    				</xs:element>
+    			</xs:sequence>
+    		</xs:complexType>
+    </xs:element>
+</xs:schema>
